@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanitas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+      
+        <div class="header">
+          <img src="imagens/logo.png" alt="logo da ONG" id="logo"> 
+          <div id="titulo">Humanitas BR-UC</div>
+          <div id="icones">
+            <button><img src="imagens/setting.png" alt="settings button" height=41 width=41></button>
+            <button><img src="imagens/flag.png" alt="idiom button" height=41 width=41></button>
+          </div>
+        </div>
+      
+        <div id="main">
+
+          
+            <div class="js">
+              <div id="bordao">Doe alimentos para ajudar famílias; salve vidas!</div> <br>
+
+              <div>
+                Água <input type="number" id="agua" value = "0" min="0"> L x R$0.005 <br> <br>
+                Arroz <input type="number" id="arroz" value = "0" min="0"> kg x R$6 <br> <br>
+                Batata <input type="number" id="batata" value = "0" min="0"> kg x R$5<br> <br>
+                Frango <input type="number" id="frango" value = "0" min="0"> kg x R$16<br> <br>
+                Leite <input type="number" id="leite" value = "0" min="0"> L x R$5<br> <br>
+                Macarrão <input type="number" id="macarrao" value = "0" min="0"> kg x R$3<br> <br> 
+              </div>
+              <br> <br>
+
+
+              
+              <button onclick="doar()" id="botao">Somar valor</button>
+              
+              <br> <br>
+              
+              <div> Preço total: R$<span id="resultado"></span> </div>
+          </div>
+
+            <div class="cartao"> 
+              <p>Informações de pagamento:</p>
+              Nome titular <input type="text" id="nome"> <br> <br>
+              Numero do cartao <input type="number" id="numero" max="9999999999999999"> <br> <br>
+              CPF titular <input type="number" id="cpf" max="99999999999"> <br> <br>
+              Validade <input type="month" id="validade"> <br> <br>
+              CVV <input type="number" id="cvv" max="999"> <br> <br>
+              <button onclick="salvar()" class="BBB">Salvar cartão</button> <button onclick="comprar()" class="BBB">Finalizar compra</button>
+            </div> 
+
+            <div class="sobre">
+               <p id="content">Sobre nós: <br> Somos uma ONG criada em 2018 com intuito de ajudar e alimentar pessoas sem condições. Com a guerra da Ucrânia em 2022, decidimos que poderíamos ajudar ainda mais pessoas e refugiados, porém precisamos arrecadar alimentos para podermos oferecer para essas pessoas.</p>
+              <img src="imagens/ong.jpg" alt="imagem para ilustrar sobre nós" height=315 width=450>
+            </div>
+
+
+        </div>    
+
+
+        <div class="footer">
+          <p id="sigam">Sigam nossas redes sociais e acompanhem nosso trabalho: </p>
+          <div class="redes">
+           <a href="https://www.instagram.com/"> <img src="imagens/instagram.png" alt="instagram logo" width= 50 height= 50> Instagram.com/SOS_Ucrania</a>
+            <a href="https://www.youtube.com/"><img src="imagens/youtube.png" alt="youtubelogo" width=50 height=50> youtube.com/SOSUC</a>
+            <a href="https://pt-br.facebook.com/"><img src="imagens/facebook.png" alt="facebook logo" width=50 height=50> facebook.com/SOSUC</a>
+            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="imagens/whatsapp.png" alt="whatsapp logo" width=50 height=50> Entre em contato via Whatsapp</a>
+          </div>
+        </div>
+      
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

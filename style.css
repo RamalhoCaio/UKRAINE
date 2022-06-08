@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+/* Divisao da pagina*/
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 0.5fr 2.1fr 0.4fr;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+}
+
+
+/* cabecalho da pagina*/
+.header{
+    grid-area: header;
+    background-color: #61BFED;
+    display: grid;
+    border-bottom: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "logo titulo icones";
+}
+
+  /*Elementos do cabecalho*/
+#logo {
+  grid-area: logo;
+  height:130px;
+  width: 290px;
+  text-align: left;
+}
+
+#titulo{
+  grid-area: titulo;
+  margin-top: 30px;
+  color: white;
+  font-size: 60px;
+  font-weight: 25px;
+  font-family: sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#icones{
+  grid-area: icones;
+  text-align: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+
+/* Conteudo da pagina*/
+#main{
+    grid-area: main;
+    background-color: #ECFD83;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.6fr;
+    grid-template-areas: "js cartao sobre";
+    border-bottom: 1px solid black;
+}
+
+ /*Elementos do conteudo*/
+.js {
+  text-align: center;
+  grid-area: js;
+  margin-top: 25%;
+  font-size: 17px;
+}
+
+.cartao {
+  grid-area: cartao;
+  margin-top: 25%;
+  font-size: 17px;
+  text-align: center;
+  margin-right: 120px;
+}
+
+.sobre{
+  grid-area: sobre;
+  margin-top: 120px;
+  margin-right: 50px;
+}
+#content{
+  padding: 10px;
+  background-color: #FFFF;
+  border: 5px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+ /*Design dos botoes*/
+#botao{
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#botao:hover {
+  background-color: #4bce84;
+  color: white;
+  cursor: pointer;
+}
+.BBB {
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 5px;
+  border: 2px solid black;
+}
+.BBB:hover {
+  background-color: #4bce84;
+  color: white;
+  cursor: pointer;
+}
+
+
+   /* Rodape da pagina */
+.footer{
+  grid-area: footer;
+  background-color: #61BFED;
+  height: 100%;
+}
+
+#sigam{
+  font-size: large;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.redes{
+  margin-top: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+
+/*Tentativa responsividade: */
+
+@media screen and (min-width:320px) {
+
+  container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main  {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer  {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  divisao  {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+}
