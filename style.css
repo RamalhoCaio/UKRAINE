@@ -79,6 +79,12 @@
   margin-right: 120px;
 }
 
+.bordao{
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-decoration: underline; 
+}
+
 .sobre{
   grid-area: sobre;
   margin-top: 120px;
